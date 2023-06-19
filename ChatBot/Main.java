@@ -4,6 +4,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Chatbot bot = new Chatbot();
+        // criando as respostas
+        Resposta rs1 = new RespostaSimples("nome", "Meus amigos me chamam de AnhembiBot.");
+        // adicionando as respostas ao chatbot
+        bot.adiciona(rs1);
         System.out.println(" ------------------------------------");
         System.out.println(" Iniciando o chatbot ");
         System.out.println(" ------------------------------------");
