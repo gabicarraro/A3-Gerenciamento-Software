@@ -6,8 +6,10 @@ public class Main {
         Chatbot bot = new Chatbot();
         // criando as respostas
         Resposta rs1 = new RespostaSimples("nome", "Meus amigos me chamam de AnhembiBot.");
+        Resposta rs2 = new RespostaData("dia");
         // adicionando as respostas ao chatbot
         bot.adiciona(rs1);
+        bot.adiciona(rs2);
         System.out.println(" ------------------------------------");
         System.out.println(" Iniciando o chatbot ");
         System.out.println(" ------------------------------------");
