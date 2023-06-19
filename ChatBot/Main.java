@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Chatbot bot = new Chatbot();
+        System.out.println(" ------------------------------------");
+        System.out.println(" Iniciando o chatbot ");
+        System.out.println(" ------------------------------------");
+        Scanner entrada = new Scanner(System.in);
+        String texto;
+        // loop infinito para ficar lendo as perguntas do usuario
+        while (true) {
+            System.out.print("> ");
+            texto = entrada.nextLine();
+            bot.processar(texto);
+        }
+    }
+}
