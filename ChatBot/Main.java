@@ -9,11 +9,17 @@ public class Main {
         Resposta rs2 = new RespostaData("dia");
         Resposta rs3 = new RespostaHora("hora");
         Resposta rs4 = new RespostaContador("conta");
+        // criando as piadas
+        ArrayList<String> piadas = new ArrayList<>();
+        piadas.add("Qual Ã© o peixe baterista ? A truta!");
+        piadas.add("Qual Ã© o peixe que cai do cÃ©u? Atum!");
+        Resposta rs5 = new RespostaAleatoria("piada", piadas);
         // adicionando as respostas ao chatbot
         bot.adiciona(rs1);
         bot.adiciona(rs2);
         bot.adiciona(rs3);
         bot.adiciona(rs4);
+        bot.adiciona(rs5);
         System.out.println(" ------------------------------------");
         System.out.println(" Iniciando o chatbot ");
         System.out.println(" ------------------------------------");
